@@ -133,8 +133,7 @@ public class ClazzDumpCustomAgent implements ClassFileTransformer {
             if (!file.exists()) {
                 System.out.println(dirPath + fileName + " is not exist, creating...");
                 file.createNewFile();
-            }
-            else {
+            }else {
 
 //                String os = System.getProperty("os.name");        // 主要针对windows文件不区分大小写问题
 //                if(os.toLowerCase().startsWith("win")){
