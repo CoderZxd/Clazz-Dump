@@ -63,11 +63,9 @@ public class ClazzDumpCustomAgent implements ClassFileTransformer {
                     String[] kv = param1.split("=");
                     if("-d".equalsIgnoreCase(kv[0])) {
                         exportDir = kv[1];
-                    }
-                    else if("-f".equalsIgnoreCase(kv[0])) {
+                    }else if("-f".equalsIgnoreCase(kv[0])) {
                         filterStr = kv[1];
-                    }
-                    else if("-r".equalsIgnoreCase(kv[0])) {
+                    }else if("-r".equalsIgnoreCase(kv[0])) {
                         recursiveDir = true;
                     }
                 }
