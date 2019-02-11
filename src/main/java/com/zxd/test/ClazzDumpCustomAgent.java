@@ -19,7 +19,7 @@ import java.util.Arrays;
 public class ClazzDumpCustomAgent implements ClassFileTransformer {
 
     /**
-     * 导出过滤表达式，此处为类名前缀， 以 -f 参数指定
+     * 导出过滤表达式，此处为类名前缀， 以 -p 参数指定
      */
     private String filterStr;
 
@@ -63,7 +63,7 @@ public class ClazzDumpCustomAgent implements ClassFileTransformer {
                     String[] kv = param1.split("=");
                     if("-d".equalsIgnoreCase(kv[0])) {
                         exportDir = kv[1];
-                    }else if("-f".equalsIgnoreCase(kv[0])) {
+                    }else if("-p".equalsIgnoreCase(kv[0])) {
                         filterStr = kv[1];
                     }else if("-r".equalsIgnoreCase(kv[0])) {
                         recursiveDir = true;
